@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      
+        .header {
+            width: 100%;
+            display: flex;
+            background-color: #333;
+            align-items: center;
+            padding: 10px;
+
+
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        nav a {
+            margin: 0 50px;
+            color: grey;
+            padding: 15px 20px;
+            align-items: center;
+            text-align: center;
+
+
+        }
+
+        nav a i {
+            margin-left: 10px;
+
+        }
+
+        header img {
+            width: 300px;
+
+        }
+
+
+
+        #about {
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: bisque;
+
+
+        }
+
+        .info {
+            width: 40%;
+            margin: 20px;
+        }
+
+        .skills {
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 20px;
+
+
+        }
+
+        .h {
+            text-align: center;
+            
+        }
+
+        .img img {
+            border-radius: 50%;
+            padding: 5px;
+            mix-blend-mode: multiply;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 145px;
+            padding: 0px 125px;
+    
+        }
+        .box{
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+        }
+        .box img{
+            width: 250px;
+        }
+        .box2 img{
+            width: 185px;
+            height: 250px;
+        }
+        .box1 img{
+            width: 192px;
+        }
+
+        .box:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+         .github{
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+         }
+
+         button{
+            background-color: green;
+            color: white;
+            
+         }
+
+         body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 30px;
+            color: #2c3e50;
+        }
+
+        .container1 {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+       
+        .project {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project img {
+            max-width: 200px;
+            height: auto;
+            object-fit: cover;
+            border-right: 5px solid #2c3e50;
+        }
+
+        .project p {
+            padding: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .project:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact{
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            
+        }
+
+
+
+.contact-container {
+    background-color: #fff;
+   
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    align-items: center;
+    margin-left: 530px;
+}
+
+
+.contact-container h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.contact-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+  
+    font-size: 1rem;
+}
+
+.contact-form input:focus {
+
+    outline: none;
+  
+}
+
+
+.contact-form button {
+    padding: 10px;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+   
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #1a242f;
+}
+
+
+
+        
+         
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav>
+            <a href="about"><i class="fas fa-user"></i> About</a>
+            <a href="skill"><i class="fas fa-home"></i> Skill</a>
+            <a href="projects"><i class="fas fa-cog"></i> Projects</a>
+            <a href="contact"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+
+        </nav>
+
+    </header>
+
+    <section id="about">
+        <div class="img">
+            <img
+                src="https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg">
+        </div>
+
+        <div class="info">
+            <h1 style="color: rgb(255, 159, 127);">Sarang Malve</h1>
+            <p style="color: grey;"> Web Developer </p>
+            <p> Web Developer,
+                Creative web developer skilled in HTML, CSS, and JavaScript, focused on building responsive and user-friendly websites. Passionate about crafting dynamic and engaging web experiences..</p>
+
+                <div class="buttons">
+                    <button class="box">Download My Resume</button>
+                </div>
+                
+                <div class="github">
+                    <i class="fa-brands fa-github"> </i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+
+                
+            </div>
+
+        </div>
+    </section>
+    <div class="h">
+        <h1>Skills</h1>
+    </div>
+    <div class="container">
+        <div class="box box1">
+            <img src="https://th.bing.com/th/id/OIP.1bnxcVBT_bKoNqP-tLjcpgHaJf?rs=1&pid=ImgDetMain" alt="">
+                <h3>Html</h3>
+                <p>HTML is a markup language for the web that defines the structure of web pages. Learn what HTML tags, elements, attributes, and semantics are and how they work.</p>
+        </div>
+
+        <div class="box box2">
+            <img src="https://th.bing.com/th/id/OIP.7D5uM_zPzVpXQMoruEzRPAHaKc?w=147&h=207&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                alt="">
+                <h3>Css</h3>
+                <p>CSS stands for Cascading Style Sheets, it is a simple design language intended to simplify the process of making web pages presentable using CSS properties.</p>
+        </div>
+
+        <div class="box box3">
+            <img src="https://th.bing.com/th/id/R.4c48053ed95e28a2ec7c6e3b784b1c16?rik=%2fBj8KWCE8bCapQ&riu=http%3a%2f%2fthebamboocode.com%2fwp-content%2fuploads%2f2016%2f03%2fjs-logo.png&ehk=g5YFs6jfGflo%2brZl5LTWfOfewU3YxawHs6HXpKV9faE%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+                alt="">
+                <h3>Javascript</h3>
+                <p>JavaScript is a programming language used for creating dynamic content on websites. It is a lightweight, cross-platformand single-threadedprogramming language</p>
+                
+        </div>
+
+    </div>
+
+    <div class="container1">
+        <h1>Projects</h1>
+        <div class="project project1">
+            <img src="https://th.bing.com/th/id/OIG2.fnx81IYy7n59D98TTyCm?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="">
+            <p>Hostel Management System (HMS): Developed using Hibernate, featuring entity relationships and CRUD operations for managing hostels, rooms, students, bookings, payments, and complaints.</p>
+        </div>
+        <div class="project project2">
+            <img src="https://th.bing.com/th/id/OIG4.mu7vQNxCL0xqgh3UxURn?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="">
+            <p>Food Delivery System (FDS): Full-stack application developed using Spring Boot for backend services, managing users, restaurants, orders, and payments.</p>
+        </div>
+
+        <div class="project project3">
+            <img src="https://th.bing.com/th/id/OIG3.R4x896WckXGSOJN_NWBk?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="">
+            <p>Spotify Clone: A responsive music streaming UI built with HTML, CSS, and JavaScript, simulating core Spotify features.</p>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <h1>Contact Me</h1>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
